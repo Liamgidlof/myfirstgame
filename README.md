@@ -1,1 +1,3 @@
-# myfirstgame
+Checklista:
+
+Fixat github repo.
