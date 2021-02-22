@@ -1,13 +1,26 @@
-r = 60
-h = 50
+r = 1
+h = 2
+w = 3
 
-function love.update()
-    r = r + 1
-    h = h + 1
-end
+
+
 
 function love.draw()
     love.graphics.setColor(255,0,0,0.5)
-    love.graphics.rectangle("line",90,150,50, h)
-    love.graphics.circle("fill",40,200, r)
+    love.graphics.rectangle("line",100,150, w, h)
+    love.graphics.circle("fill",150,200, r)
 end
+
+function love.update()
+    if r <= 50 then
+        r = r + 0.5
+    end
+    if h <= 100 then
+        h = h + 0.5
+    end
+    if w <= 100 then
+        w = w + 0.5
+    end
+    
+end
+
