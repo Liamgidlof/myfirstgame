@@ -13,7 +13,7 @@ end
 
 function love.update()
     if r <= 50 then
-        r = r + 0.5
+        r = r + 0.1
     end
     if h <= 100 then
         h = h + 0.5
